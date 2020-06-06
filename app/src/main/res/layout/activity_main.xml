@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#121212">
+
+
+    <RelativeLayout
+        android:id="@+id/SearchSection"
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <ImageView
+            android:layout_marginStart="15dp"
+            android:id="@+id/Logo"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/RedLogo"/>
+
+        <ImageView
+            android:id="@+id/Search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@id/Logo"
+            app:srcCompat="@drawable/RedSearch" />
+        <ImageView
+            android:padding="10dp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/Coin"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+           android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/RedCoin"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/SectionBar"
+        android:layout_below="@id/SearchSection"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <ImageView
+            android:id="@+id/News"
+            android:layout_width="127dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/RedNews" />
+
+        <ImageView
+            android:id="@+id/Home"
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/News"
+            android:paddingTop="6dp"
+            app:srcCompat="@drawable/RedHome" />
+
+        <ImageView
+            android:id="@+id/Pop"
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="6dp"
+            app:srcCompat="@drawable/RedPopular" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/DescriptionBar"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_below="@id/SectionBar"
+        app:srcCompat="@drawable/RedTitle" />
+
+    <ImageView
+        android:id="@+id/Content"
+        android:layout_width="match_parent"
+        android:layout_height="423dp"
+        android:layout_below="@id/DescriptionBar"
+        app:srcCompat="@drawable/RedContent" />
+    <RelativeLayout
+        android:id="@+id/Menu"
+        android:layout_below="@id/Content"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <ImageView
+            android:id="@+id/Reddit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/RedMenuLogo" />
+
+        <ImageView
+            android:id="@+id/Squares"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/Reddit"
+            android:paddingTop="6dp"
+            app:srcCompat="@drawable/RedSquares" />
+
+        <ImageView
+            android:id="@+id/Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/Squares"
+            android:paddingTop="6dp"
+            app:srcCompat="@drawable/RedEdit" />
+
+        <ImageView
+            android:id="@+id/Comment"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/Edit"
+            android:paddingTop="6dp"
+            app:srcCompat="@drawable/RedComments" />
+        <ImageView
+            android:id="@+id/Mail"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/Comment"
+            android:paddingTop="6dp"
+            app:srcCompat="@drawable/RedMail" />
+    </RelativeLayout>
+</RelativeLayout>
